@@ -1,0 +1,355 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    background-color: #a43ead81;
+    color: #fff; 
+}
+
+#noscrollfuck {
+    overflow:hidden;
+}
+
+#background {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    align-self: center;
+}
+
+#score {
+    font-size: 2vw; /* Font size for the label */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Letter spacing */
+    transform: translateY(-10vh);
+    font-weight:bold;
+    color:black;
+    font-family: 'Tilt Neon', sans-serif;
+}
+#scoreCounter {
+    font-family: 'Tilt Neon', sans-serif; /* Custom font for the score */
+    padding: 10px 20px;
+    font-size:2vw;
+    background-color: #9f22aa; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 4vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Drop shadow */
+    color:white;
+}
+
+#scoreLabel {
+    font-size: 2vw; /* Font size for the label */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 1px; /* Letter spacing */
+}
+
+.content {
+    margin-top: 100px;
+    font-size: 24px;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 3vw;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #f49ffc;
+    letter-spacing: 1.5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 0.3vw;
+    padding-top: 1vh;
+    background-color: rgba(0, 0, 0, 0.757);
+    font-family: "Tilt Neon", sans-serif;
+    opacity: 90%;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer p {
+    font-size: 24px;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+.title {
+    font-size: 2vw;
+    color: #000;
+    transform:translateY(-5vh);
+}
+
+.nav-buttons {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.nav-icon {
+    cursor: pointer;
+    height: 4.5vh;
+    width: auto;
+}
+
+.nav-icon.left {
+    align-self: flex-start;
+    width: auto;
+    transform: translateX(2vw);
+}
+
+.nav-icon.right {
+    align-self: flex-end;
+    transform:translateX(-3vw);
+    width: auto;
+}
+
+#lyrics-container {
+    text-align: center;
+    margin-bottom: 20px;
+    transform: translateY(-2vh);
+}
+
+#lyrics-container {
+    font-size: 2vw; /* Adjust font size as needed */
+    line-height: 1.5;
+    padding: 1vw;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-radius: 10px;
+}
+
+.controls {
+    text-align: center;
+    z-index: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 25vw;
+    border-radius: 10px;
+    transform:translateY(11vh);
+    text-align: center;
+}
+
+.profile-picture2 {
+    width: 15vw;
+    height: 40vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.profile-picture2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button{
+    background-color: #9f22aa; /* Yellow background */
+    color: #ffffff; /* Black text */
+    border: none;
+    padding: 1vw 2vh;
+    margin: 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+    border-radius: 0.5vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform:translateY(-2vh);
+}
+
+
+button:hover {
+    background-color: #000000; 
+}
+
+
+.edit-btn {
+    background-color: #9f22aa; /* Yellow background */
+    color: #ffffff; /* Black text */
+    border: none;
+    padding: 1vh 1vw;
+    font-size: 1vw;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.5vh;
+    transform: translateY(0.2vh);    
+    margin-right: 25%;
+    margin-left: 0%;
+}
+
+footer {
+    transform:translateY(-25vh);
+    margin-left: 50%;   
+}
+
+button:hover {
+    background-color: #000000; 
+}
+
+.share-icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items:center;
+    margin-right:94%;
+}
+
+.share-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 3vw;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.share-icon:hover {
+    transform: scale(1.2);
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-left:25%;
+    margin-right:25%;
+    transform:translateY(5vh);
+}
+
+.icon {
+    width: 3vw;
+    margin-top:0;
+    height: 3vw;
+}
+.icon:hover {
+    transform: scale(1.5);
+}
+
+#playButton {
+    transform:translateY(4vh);
+    margin-right: 25%;
+}
+
+.leaderboard-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 10vw;
+    border-radius: 10px;
+    transform:translateY(20vh);
+}
+
+.leaderboard-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size:1.5vw;
+    transform:translateY(-5vh);
+}
+
+.profile-picture img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-points {
+    color: #888;
+}
+
+#top5 {
+    transform:translateY(-5vw);
+}
+
+.profile {  
+    transform:translateY(5vh);
+    font-size:4vw;
+    color:#ffffff;
+    font-weight:bold;
+}
+
+.leaderboard {
+    transform:translateY(-40vh);
+    position:absolute;
+    font-size:4vw;
+    color:#ffffff;
+    font-weight:bold;
+}
+     
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 7vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-bottom: 2vh;
+        letter-spacing: 1vw;
+
+    }
+
+    .nav-icon.left {
+        transform: translateX(2vw);
+    }
+
+    .nav-icon.right {
+        transform: translateX(-6vw);
+    }
+
+    #lyrics-container {
+        font-size: 4vw;
+        padding: 2vw;
+    }
+
+    button {
+        font-size: 3vw;
+        padding: 2vw 3vw;
+        transform: translateY(-10vh);
+    }
+
+    .edit-btn {
+        font-size: 3vw;
+        padding: 2vw 3vw;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .profile-picture {
+        width: 30vw;
+        height: 30vw;
+    }
+}

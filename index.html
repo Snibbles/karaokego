@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karaoke GO</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+</head>
+<body id="noscrollfuck">
+    <header>
+        <div class="nav-buttons">
+            <a href="leaderboard.html">
+                <img src="assets/leaderboard.png" alt="Leaderboard Icon" class="nav-icon left">
+            </a>
+            <a href="profile.html">
+                <img src="assets/profile.png" alt="Profile Icon" class="nav-icon right">
+            </a>
+        </div>
+        <img id="background" src="/assets/background.png" alt="Arcade background">
+        <h1>KARAOKE GO</h1>
+    </header>
+
+    <main>
+        <section id="score">
+            Score: <span id="scoreCounter">0</span>
+        </section>
+        <section id="lyrics">
+            <h2 class="title">Never Gonna Give You Up - Rick Astley</h2>
+            <div id="lyrics-container">
+                <!-- LYRICS HERE -->
+            </div>
+        </section>
+
+        <section class="controls">
+            <button onclick="startKaraoke()">Start Karaoke</button>
+            <button onclick="pauseKaraoke()">Pause Karaoke</button>
+            <button onclick="stopKaraoke()">Stop Karaoke</button>
+        </section> 
+        <button onclick="startRecording()" id="recordButton" class="icon-button">
+            <img src="assets/microphone.png" alt="Microphone Icon" class="icon">
+        </button>
+        <button onclick="stopRecording()" id="stopRecordButton" class="icon-button" style="display: none;">
+            Stop Recording
+        </button>
+        <button onclick="playRecording()" id="playButton" class="icon-button" style="display: none;">
+            <img src="assets/play.png" alt="Play Icon" class="icon">
+        </button>
+        <button onclick="pauseRecording()" id="pauseButton" class="icon-button" style="display: none;">
+                <img src="assets/pause.png" alt="Pause Icon" class="icon">
+        </button>
+    </main>
+
+    <!-- Audio element for the song -->
+    <audio id="audioPlayer">
+        <source src="/assets/nevergonna.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+
+    <footer>
+        <div class="share-icons">
+            <a href="#" id="shareFacebook">
+                <img src="assets/facebook.png" alt="Share on Facebook" class="share-icon">
+            </a>
+            <a href="#" id="shareInstagram">
+                <img src="assets/instagram.png" alt="Share on Instagram" class="share-icon">
+            </a>
+            <a href="#" id="shareTiktok">
+                <img src="assets/tiktok.png" alt="Share on TikTok" class="share-icon">
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
