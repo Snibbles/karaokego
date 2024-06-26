@@ -22,29 +22,29 @@ body {
 }
 
 #score {
-    font-size: 2vw; /* Font size for the label */
-    text-transform: uppercase; /* Uppercase text */
-    letter-spacing: 1px; /* Letter spacing */
+    font-size: 2vw; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
     transform: translateY(-10vh);
     font-weight:bold;
     color:black;
     font-family: 'Tilt Neon', sans-serif;
 }
 #scoreCounter {
-    font-family: 'Tilt Neon', sans-serif; /* Custom font for the score */
+    font-family: 'Tilt Neon', sans-serif; 
     padding: 10px 20px;
     font-size:2vw;
-    background-color: #9f22aa; /* Background color */
-    border-radius: 10px; /* Rounded corners */
+    background-color: #9f22aa; 
+    border-radius: 10px; 
     margin-bottom: 4vh;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Drop shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     color:white;
 }
 
 #scoreLabel {
-    font-size: 2vw; /* Font size for the label */
-    text-transform: uppercase; /* Uppercase text */
-    letter-spacing: 1px; /* Letter spacing */
+    font-size: 2vw; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
 }
 
 .content {
@@ -87,7 +87,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     padding: 20px;
 }
 
@@ -132,10 +132,10 @@ main {
 }
 
 #lyrics-container {
-    font-size: 2vw; /* Adjust font size as needed */
+    font-size: 2vw; 
     line-height: 1.5;
     padding: 1vw;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.7); 
     border-radius: 10px;
 }
 
@@ -170,8 +170,8 @@ main {
 }
 
 button{
-    background-color: #9f22aa; /* Yellow background */
-    color: #ffffff; /* Black text */
+    background-color: #9f22aa;
+    color: #ffffff; 
     border: none;
     padding: 1vw 2vh;
     margin: 1vw;
@@ -191,8 +191,8 @@ button:hover {
 
 
 .edit-btn {
-    background-color: #9f22aa; /* Yellow background */
-    color: #ffffff; /* Black text */
+    background-color: #9f22aa; 
+    color: #ffffff; 
     border: none;
     padding: 1vh 1vw;
     font-size: 1vw;
@@ -258,7 +258,7 @@ button:hover {
 }
 
 .leaderboard-container {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 10vw;
     border-radius: 10px;
     transform:translateY(20vh);
